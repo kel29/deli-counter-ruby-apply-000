@@ -16,6 +16,13 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{array.length} in line."
 end
 
+$i = 0
+
+def take_a_number(array)
+  array << $i + 1 
+  puts "Welcome, you have ticket number #{$i}."
+end
+
 def now_serving(array)
   if array.empty?
     puts "There is nobody waiting to be served!"
